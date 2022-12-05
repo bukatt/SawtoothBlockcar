@@ -1,0 +1,13 @@
+[Unit]
+Description=Sawtooth Blockcar TP Python
+After=network.target
+
+[Service]
+User=sawtooth
+Group=sawtooth
+EnvironmentFile=-/etc/default/sawtooth-bc-tp-python
+ExecStart=/usr/bin/tp-python $SAWTOOTH_BC_TP_PYTHON_ARGS
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

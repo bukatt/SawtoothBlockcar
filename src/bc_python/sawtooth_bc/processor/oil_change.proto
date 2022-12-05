@@ -1,0 +1,6 @@
+message OilChange {
+    string vin = 1;
+    string date = 2;
+    string odometer_reading = 3;
+    string oil_type = 4;
+}

@@ -1,0 +1,2 @@
+# The url to connect to a running Validator
+#   connect = "tcp://localhost:4004"
